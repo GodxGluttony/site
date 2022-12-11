@@ -151,3 +151,24 @@ nav ul li a{
 		margin: 20px auto;
 	}
 }
+
+		/* Linija ispod texta side meni */
+
+.sideNav ul,li::after{
+	content: '';	
+	height: 3px;
+	width: 0;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.5s;
+}
+
+.sideNav ul,li{
+	position: relative;
+}
+
+.sideNav ul,li:hover::after{
+	width: 34%;
+}
