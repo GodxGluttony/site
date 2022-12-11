@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="razred.css"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="top"></section>
+
+<section id="banner">
+	<!--  <img src="multimedija/logo2.png" class="logo">  -->
+		<div class="banner-text">
+			<h1>Razredi</h1>
+			<div class="banner-button">
+				<a href="#prvi"><span></span>Prvi razredi</a>
+				<a href="#drugi"><span></span>Drugi razredi</a>
+				<a href="#treci"><span></span>Treci razredi</a>
+				<a href="#treci"><span></span>Cetvrti razredi</a>
+			</div>
+		</div>
+</section>
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="index.html">Početak</a></li>	
+		<li><a href="novosti.html">Novosti</a></li>
+		<li><a href="razred.html">Razredi</a></li>	
+		<li><a href="raspored.html">Raspored</a></li>
+		<li><a href="info.html">O nama</a></li>
+	</ul>
+	</nav>
+</div>
+<div id="menuButton">
+	<img src="multimedija/menu2.png" id="menu">
+</div>
+
+<div id="backButton">
+	<a href="javascript: history.go(-1)" ><span></span><img src="multimedija/back.png" id="back"></a>
+</div>
+
+<div id="upButton">
+	<img src="multimedija/up.png" id="up" onclick="topFunction()">
+	  
+</div>
+
+	<!-- Meni sa strane -->
+
+<script type="text/javascript">
+	var menuButton = document.getElementById("menuButton")
+	var sideNav = document.getElementById("sideNav")
+	var menu = document.getElementById("menu")
+
+	sideNav.style.right = "-250px";
+	menuButton.onclick = function(){
+		if(sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+			menu.src = "multimedija/closemenu.png";
+		}
+		else{
+			sideNav.style.right = "-250px";
+			menu.src = "multimedija/menu2.png";
+		}
+	}
+</script>
+
+	<!-- Back button -->
+
+<script type="text/javascript">
+	var backButton = document.getElementById("backButton")
+	var back = document.getElementById("back")
+
+	backButton.onclick = window.history.go(-1); return false;	
+</script>
+
+	<!-- Up button -->
+
+<script type="text/javascript">
+	let mybutton = document.getElementById("upButton");
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+
+</body>
+</html>

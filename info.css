@@ -1,0 +1,303 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+	/* Scroll animacija */
+
+html {
+  scroll-behavior: smooth;
+ }
+
+ 		/* AKO HOCES BEZ SKROLLBARA DESNO */
+/*
+ html::-webkit-scrollbar {
+  display: none;
+}
+*/
+
+#banner{
+	background: linear-gradient(rgba(0, 0, 0, 0.5),#009688),url(multimedija/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+}
+
+	/* Gimnazija text */
+
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 210px;
+}
+.banner-text h1{
+	font-size: 130px;
+	font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+	font-size: 20px;
+	font-style: italic;
+}
+		
+	/* Buttons u sredini */
+
+.banner-button {
+	margin: 70px auto 0;
+}
+.banner-button a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+
+}
+.banner-button a span{
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #99323c;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-button a:hover span{
+	width: 100%;
+}
+	
+	/* Meni sa strane */
+
+#sideNav{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: #009688;
+	z-index: 2;
+	transition: 0.5s;
+}
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+	text-transform: uppercase;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+	/* Button u cosku */
+
+#menuButton{
+	width: 50px;
+	height: 50px;
+	background: #009688;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+#menuButton img{
+	width: 20px;
+	margin-top: 15px;
+} 
+
+#backButton{
+	width: 50px;
+	height: 50px;
+	background: #009688;
+	text-align: center;
+	position: fixed;
+	left: 30px;
+	top: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+
+#backButton img{
+	width: 20px;
+	margin-top: 15px;
+} 
+
+
+
+#upButton{
+	display: none;
+	width: 50px;
+	height: 50px;
+	background: #009688;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+
+}
+
+#upButton img{
+	width: 20px;
+	margin-top: 15px;
+}
+
+
+	/* Gimnazija text za telefon */
+
+@media screen and (max-width: 770px){
+	.banner-text h1{
+		font-size: 44px;
+	}
+	.banner-button a{
+		display: block;
+		margin: 20px auto;
+	}
+}
+
+		/* Istorijat */
+
+#istorija{
+	width: 100%;
+	height: 87vh;
+	padding: 60px 0;
+	padding-bottom: 120px;
+}
+.naslov{
+	text-align: center;
+	padding-bottom: 65px;
+	text-decoration: none;
+}
+
+.naslov h1{
+	font-size: 50px;
+}
+.box{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+}
+.istorijat{
+	flex-basis: 100%;
+}
+.istorijat-text p1{
+	color: #ff0000;
+}
+.istorijat h1{	
+	margin-bottom: 30px;
+	font-weight: 100;
+	color: #009688;
+}
+
+
+		/* Istorijat za telefon */
+
+@media screen and (max-width: 770px){
+	.naslov h1{
+	font-size: 35px;
+	}
+	.istorijat-slike iframe{
+		width: 100%;
+	}
+}
+.istorijat{
+	display: block;
+	height: 0px;
+	clear: both;
+	float: none;
+}
+.istorijat div{
+	float: left;
+}
+.pas1{
+	width: 25%;
+	padding-right: 70px;
+	padding-left: 70px;
+}
+.pas2{
+	width: 25%;
+	padding-right: 70px;
+	padding-left: 70px;
+}
+.pas3{
+	width: 25%;
+	padding-right: 70px;
+	padding-left: 70px;
+}
+
+		/* Smjerovi */
+
+#smjer{
+	width: 100%;
+	padding: 70px 0;
+	background: #efefef;
+}
+.smjerovi{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.smjerovi-text{
+	flex-basis: 28%;
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 3px	#00968814;
+	cursor: pointer;
+	transition: transform .5s;
+}
+
+.smjerovi-text:hover{
+	transform: translateY(7px);
+}
+
+@media screen and (max-width: 770px){
+	.smjerovi-text{
+		flex-basis: 100%;
+	}
+
+}
+.smjerovi-pic{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+.smjerovi-pic1{
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 7px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.smjerovi-pic1 img{
+	width: 100%;
+	border-radius: 7px;
+}
+@media screen and (max-width: 770px){
+
+	.smjerovi-pic1 {
+		margin-bottom: 5px;
+		flex-basis: 100%;
+	}
+
+}

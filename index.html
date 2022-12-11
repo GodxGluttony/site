@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="top"></section>
+<section id="banner">
+	<!--  <img src="multimedija/logo2.png" class="logo">  -->
+		<div class="banner-text">
+			<h1>Gimnazija</h1>
+			<p>JU Gimnazija Prnjavor</p>
+			<div class="banner-button">
+				<a href="#kontakt"><span></span>Kontakt</a>
+				<a href="#galerija"><span></span>Galerija</a>
+			</div>
+		</div>
+</section>
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="index.html">Početak</a></li>	
+		<li><a href="novosti.html">Novosti</a></li>
+		<li><a href="razred.html">Razredi</a></li>	
+		<li><a href="raspored.html">Raspored</a></li>
+		<li><a href="info.html">O nama</a></li>
+	</ul>
+	</nav>
+</div>
+<div id="menuButton">
+	<img src="multimedija/menu2.png" id="menu">
+</div>
+
+<div id="backButton">
+	<a href="javascript: history.go(-1)" ><span></span><img src="multimedija/back.png" id="back"></a>
+</div>
+
+<div id="upButton">
+	<img src="multimedija/up.png" id="up" onclick="topFunction()">
+	  
+</div>
+
+
+	<!-- Info skole -->
+
+<section id="kontakt">
+<div class="naslov">
+<p>Kontakt</p>
+<h1>Kako da nas kontaktirate</h1>
+</div>
+<div class="box">
+	<div class="kontakti">
+		<h1>Kontakt podaci:</h1>
+		<div class="kontakti-opis">
+			<div class="kontakti-text">
+				<p>Adresa: Rade Vranješević 1, 78430 Prnjavor<br> E-mail: ss26@skolers.org<br>Broj telefona:051/655-328<br>Fax: 051/660-346</p>
+				<p1>Direktor</p1>
+				<p>Broj telefona: 051/660-044<br>
+					E-mail: ss26.direktor@skolers.org</p>
+				<p1>Sekretar</p1>
+				<p>Broj telefona: 051/655-328<br>
+					E-mail: ss26.sekretar@skolers.org</p>
+				<p1>Računovođa</p1>
+				<p>Broj telefona: 051/660-346<br>
+					E-mail: ss26.racunovodja@skolers.org</p>
+				<p1>Pedagog</p1>
+				<p>E-mail: ss26.pedagog@skolers.org</p>
+				<p1>Bibliotekar</p1>
+				<p>E-mail: ss26.bibliotekar@skolers.org</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mapa -->
+
+	<div class="kontakti-slike">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.8077421772578!2d17.6708344!3d44.86620859999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ddeff64c116c3%3A0x3fba2ae2278338aa!2sJU%20Gimnazija%20Prnjavor!5e0!3m2!1sen!2sba!4v1670617893218!5m2!1sen!2sba" width="760" height="580" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</div>
+</section>
+
+	<!-- Galerija -->
+ 
+<section id="galerija">
+	<div class="naslov">
+	<p>Galerija</p>
+	<h1>Fotografije škole</h1><br><br>
+	<div class="galerija-box">
+		<img src="multimedija/skola1.jpg">
+		<img src="multimedija/skola2.jpg">
+		<img src="multimedija/skola3.jpg">
+		<img src="multimedija/skola4.jpg">
+	</div><br><br><br>
+	<h1>Video zapisi škole</h1><br><br>
+	<iframe width="1200" height="700" src="https://www.youtube.com/embed/m1x3vvmvWXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+
+</section>
+
+	<!-- Meni sa strane -->
+
+<script type="text/javascript">
+	var menuButton = document.getElementById("menuButton")
+	var sideNav = document.getElementById("sideNav")
+	var menu = document.getElementById("menu")
+
+	sideNav.style.right = "-250px";
+	menuButton.onclick = function(){
+		if(sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+			menu.src = "multimedija/closemenu.png";
+		}
+		else{
+			sideNav.style.right = "-250px";
+			menu.src = "multimedija/menu2.png";
+		}
+	}
+</script>
+
+	<!-- Back button -->
+
+<script type="text/javascript">
+	var backButton = document.getElementById("backButton")
+	var back = document.getElementById("back")
+
+	backButton.onclick = window.history.go(-1); return false;	
+</script>
+
+	<!-- Up button -->
+
+<script type="text/javascript">
+	let mybutton = document.getElementById("upButton");
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+
+</body>
+</html>
+
