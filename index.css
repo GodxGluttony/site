@@ -180,11 +180,14 @@ nav ul li a{
 }
 
 	/* Sve za donji dio sajta */
+	/* izbrisati dole kom ako hoces za 1920x1080 rez sajt */
 
 #kontakt{
 	width: 100%;
 	height: 87vh;
-	padding: 75px 0;
+	/* padding: 75px 0; */
+	padding-bottom: 75px;
+	padding-top: 60px;
 	margin: auto;
 	position: relative;
 }
@@ -203,18 +206,7 @@ nav ul li a{
 	z-index: 1;
 	display: inline-block;
 }
-.naslov p::after{
-	content: '';
-	width: 50px;
-	height: 35px;
-	background: linear-gradient( rgba(10, 10, 10, .65),#fff);
-	position: absolute;
-	top: -20px;
-	left: 0;
-	z-index: -1;
-	transform: rotate(10deg);
-	border-top-left-radius: 35px;
-	border-bottom-right-radius: 35px;
+
 }
 .naslov h1{
 	font-size: 50px;

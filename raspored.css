@@ -42,6 +42,8 @@ html {
 	color: #fff;
 	border: .5px solid #fff;
 	position: relative;
+	align-items: center;
+	
 	z-index: 1;
 
 }
