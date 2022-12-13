@@ -18,7 +18,7 @@ html {
 */
 
 #banner{
-	background: linear-gradient(rgba(0, 0, 0, 0.5),#009688),url(multimedija/bg.jpg);
+	background: linear-gradient(rgba(0, 0, 0, .5),rgb(10, 10, 10)),url(multimedija/bg.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -34,7 +34,7 @@ html {
 }
 .banner-text h1{
 	font-size: 130px;
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Playfair Display', cursive;
 }
 .banner-text p{
 	font-size: 20px;
@@ -80,7 +80,9 @@ html {
 	position: fixed;
 	right: -250px;
 	top: 0;
-	background: #009688;
+	background: rgba(10, 10, 10, .65);
+	box-shadow: 0 8px rgb(2, 4, 24);
+	border-left: 2px solid rgba(255, 255, 255, 0.1);
 	z-index: 2;
 	transition: 0.5s;
 }
@@ -99,7 +101,7 @@ nav ul li a{
 #menuButton{
 	width: 50px;
 	height: 50px;
-	background: #009688;
+	background: rgba(10, 10, 10, .65);
 	text-align: center;
 	position: fixed;
 	right: 30px;
@@ -116,7 +118,7 @@ nav ul li a{
 #backButton{
 	width: 50px;
 	height: 50px;
-	background: #009688;
+	background: rgba(10, 10, 10, .65);
 	text-align: center;
 	position: fixed;
 	left: 30px;
@@ -137,7 +139,7 @@ nav ul li a{
 	display: none;
 	width: 50px;
 	height: 50px;
-	background: #009688;
+	background: rgba(10, 10, 10, .65);
 	text-align: center;
 	position: fixed;
 	right: 30px;
@@ -308,7 +310,7 @@ nav ul li a{
 	content: '';	
 	height: 3px;
 	width: 0;
-	background: #fff;
+	background: #99323c;
 	position: absolute;
 	left: 0;
 	bottom: -5px;
